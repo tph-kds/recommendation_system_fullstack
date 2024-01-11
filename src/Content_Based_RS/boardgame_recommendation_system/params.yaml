@@ -1,0 +1,5 @@
+model_params:
+  K : 10
+  BOARDGAME_NAME : "Marvel Champions: The Card Game"
+  MAX_FEATURES : 10000
+  STOP_WORDS : "english"

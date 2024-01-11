@@ -1,0 +1,3 @@
+model_params:
+  K : 10
+  BOARDGAME_NAME : "Marvel Champions: The Card Game"

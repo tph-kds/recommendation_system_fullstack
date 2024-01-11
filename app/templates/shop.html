@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Boardgame - Informations</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href= "{{url_for('static', filename = 'vendor/bootstrap/css/bootstrap.min.css')}}" >
+
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href= "{{url_for('static', filename = 'css/fontawesome.css')}}">
+    <link rel="stylesheet" href = "{{url_for('static', filename = 'css/templatemo-lugx-gaming.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/owl.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/animate.css')}}">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/main.css')}}">
+<!--
+
+TemplateMo 589 lugx gaming
+
+https://templatemo.com/tm-589-lugx-gaming
+
+-->
+  </head>
+
+  <body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="{{ url_for('index') }}"  class="logo">
+                        <img src="{{ url_for('static', filename='images/logo_bg.png') }} " alt="" style="width: 158px;">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                      <li class = "scroll-to-section" ><a href="{{ url_for('index') }}">Home</a></li>
+                      <li class = "scroll-to-section" ><a href="{{ url_for('shop')}}" class="active">Informations</a></li>
+                      <!-- <li class = "scroll-to-section" ><a href="{{ url_for('product_details')}}">Boardgame Details</a></li> -->
+                      <li class = "scroll-to-section" ><a href="{{ url_for('recommendations')}}">Recommendation</a></li>
+                      <!-- <li class = "scroll-to-section" ><a href="#">Sign In</a></li> -->
+                  </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="page-heading header-text">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h3>Boardgame List</h3>
+          <span class="breadcrumb"><a href="#">Home</a> >Informations</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="section categories related-games trending">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="section-heading">
+            <h6> Top Boardgames </h6>
+            <h2> Top Ratings </h2>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="main-button">
+            <a href="{{ url_for('shop')}}">View All</a>
+          </div>
+        </div>
+        <div class = "shop_cards">
+              {% for i, j in data.items() %}
+              <a class = "shop_card_item"  href="product-details.html">
+                  <img src="{{ j['image'] }}" alt="" class = "posters">
+                  <div class = "rest_cards" >
+                    <img src="" alt="">
+                    <div class = "cont  hidden-text" id = "hidden-text">
+                      <h4>{{ j['boardgame_name'] }}</h4>
+                      <div class = "sub">
+                        <p>{{ j['yearpublished'] }}</p>
+                      </div>  
+                    </div>
+                  </div>
+                </a>
+                {% endfor %}
+        </div>
+            <!-- <a class = "shop_card_item" onmouseover="showText()" onmouseout="hideText()" href="product-details.html">
+              <img src="" alt="" class = "posters">
+              <div class = "rest_cards" >
+                <img src="assets/images/categories-01.jpg" alt="">
+                <div class = "cont  hidden-text" id = "hidden-text">
+                  <h4></h4>
+                  <div class = "sub">
+                    <p></p>
+                  </div>  
+                </div>
+              </div>
+            </a> -->
+            <!-- <a class = "shop_card_item"  href="product-details.html">
+              <img src="assets/images/categories-01.jpg" alt="" class = "posters">
+              <div class = "rest_cards" >
+                <img src="assets/images/categories-01.jpg" alt="">
+                <div class = "cont  hidden-text" id = "hidden-text">
+                  <h4>The games</h4>
+                  <div class = "sub">
+                    <p> 2022</p>
+                  </div>  
+                </div>
+              </div>
+            </a>
+            <a class = "shop_card_item" href="product-details.html">
+              <img src="assets/images/categories-01.jpg" alt="" class = "posters">
+              <div class = "rest_cards" >
+                <img src="assets/images/categories-01.jpg" alt="">
+                <div class = "cont  hidden-text" id = "hidden-text">
+                  <h4>The games</h4>
+                  <div class = "sub">
+                    <p> 2022</p>
+                  </div>  
+                </div>
+              </div>
+            </a>
+            
+            <a class = "shop_card_item" href="product-details.html">
+              <img src="assets/images/categories-05.jpg" alt="">
+              <div class = "rest_cards" >
+                <img src="assets/images/categories-01.jpg" alt="">
+                <div class = "cont  hidden-text" id = "hidden-text">
+                  <h4>The games</h4>
+                  <div class = "sub">
+                    <p> 2022</p>
+                  </div>  
+                </div>
+              </div>
+            </a>
+
+            <a class = "shop_card_item" href="product-details.html">
+              <img src="assets/images/categories-03.jpg" alt="">
+              <div class = "rest_cards" >
+                <img src="assets/images/categories-01.jpg" alt="">
+                <div class = "cont  hidden-text" id = "hidden-text">
+                  <h4>The games</h4>
+                  <div class = "sub">
+                    <p> 2022</p>
+                  </div>  
+                </div>
+              </div>
+            </a>
+
+            <a class = "shop_card_item" href="product-details.html">
+              <img src="assets/images/categories-04.jpg" alt="">
+              <div class = "rest_cards" >
+                <img src="assets/images/categories-01.jpg" alt="">
+                <div class = "cont  hidden-text" id = "hidden-text">
+                  <h4>The games</h4>
+                  <div class = "sub">
+                    <p> 2022</p>
+                  </div>  
+                </div>
+              </div>
+            </a>
+
+            <a class = "shop_card_item" href="product-details.html">
+              <img src="assets/images/categories-05.jpg" alt="">
+              <div class = "rest_cards" >
+                <img src="assets/images/categories-01.jpg" alt="">
+                <div class = "cont  hidden-text" id = "hidden-text">
+                  <h4>The games</h4>
+                  <div class = "sub">
+                    <p> 2022</p>
+                  </div>  
+                </div>
+              </div>
+            </a>
+
+            <a class = "shop_card_item" href="product-details.html">
+              <img src="assets/images/categories-05.jpg" alt="">
+              <div class = "rest_cards" >
+                <img src="assets/images/categories-01.jpg" alt="">
+                <div class = "cont  hidden-text" id = "hidden-text">
+                  <h4>The games</h4>
+                  <div class = "sub">
+                    <p> 2022</p>
+                  </div>  
+                </div>
+              </div>
+            </a>
+
+            <a class = "shop_card_item" href="product-details.html">
+              <img src="assets/images/categories-05.jpg" alt="">
+              <div class = "rest_cards" >
+                <img src="assets/images/categories-01.jpg" alt="">
+                <div class = "cont  hidden-text" id = "hidden-text">
+                  <h4>The games</h4>
+                  <div class = "sub">
+                    <p> 2022</p>
+                  </div>  
+                </div>
+              </div>
+            </a>
+
+
+            <a class = "shop_card_item" href="product-details.html">
+              <img id = "shop_card_item_img" src="assets/images/categories-05.jpg" alt="">
+              <div class = "rest_cards" >
+                <img src="assets/images/categories-01.jpg" alt="">
+                <div class = "cont  hidden-text" id = "hidden-text">
+                  <h4>The games</h4>
+                  <div class = "sub">
+                    <p> 2022</p>
+                  </div>  
+                </div>
+              </div>  
+            </a>
+ -->
+
+
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="pagination adjust_arrow" id = "elementToToggle_container">
+            <li><a class="btn-left" id="arrowButtonLeft"> &lt; </a></li>
+            <li><a class="elementToToggle is_active" >1</a></li>
+            <li><a class="elementToToggle" >2</a></li>
+            <li><a class="elementToToggle" >3</a></li>
+            <li><a class="btn-right" id="arrowButtonRight"> &gt; </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section categories related-games trending">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="section-heading">
+            <h6> Top Boardgames </h6>
+            <h2> Top Rankings </h2>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="main-button">
+            <a href="shop.html">View All</a>
+          </div>
+        </div>
+        <div class = "rankings_cards">
+          {% for i, j in data_ranking.items() %}
+          <div class="rankings_cards_items">
+            <div class="item place_item cards_items_div">
+              <h4>{{ j['boardgame_name']}}</h4>
+                <p>{{ j['yearpublished']}}</p>
+              <div class="">
+                <a class = "tags_item" href="product-details.html"><img src="{{ j['image'] }}" alt=""></a>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        <!-- <div class="col-lg col-sm-6 col-xs-12">
+          <div class="item place_item">
+            <h4>Action</h4>
+            <div class="thumb thumb_enter">
+              <a href="product-details.html"><img src="assets/images/categories-05.jpg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg col-sm-6 col-xs-12">
+          <div class="item place_item">
+            <h4>Action</h4>
+            <div class="thumb thumb_enter">
+              <a href="product-details.html"><img src="assets/images/categories-03.jpg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg col-sm-6 col-xs-12">
+          <div class="item place_item">
+            <h4>Action</h4>
+            <div class="thumb thumb_enter">
+              <a href="product-details.html"><img src="assets/images/categories-04.jpg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg col-sm-6 col-xs-12">
+          <div class="item place_item">
+            <h4>Action</h4>
+            <div class="thumb thumb_enter">
+              <a href="product-details.html"><img src="assets/images/categories-05.jpg" alt=""></a>
+            </div>
+          </div>
+        </div> -->
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="pagination adjust_arrow" id = "elementToToggle_container1">
+            <li><a class="btn-left" id="arrowButtonLeft1"> &lt; </a></li>
+            <li><a class="elementToToggle1 is_active" >1</a></li>
+            <li><a class="elementToToggle1" >2</a></li>
+            <li><a class="elementToToggle1" >3</a></li>
+            <li><a class="btn-right" id="arrowButtonRight1"> &gt; </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="col-lg-12">
+        <p>Copyright © 2048 LUGX Gaming Company. All rights reserved. &nbsp;&nbsp; <a rel="nofollow" href="https://templatemo.com" target="_blank">Design: TemplateMo</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+
+
+  <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/isotope.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/owl-carousel.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/counter.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+
+  </body>
+</html>

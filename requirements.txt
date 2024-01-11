@@ -1,0 +1,19 @@
+scikit-learn
+numpy
+pandas
+ipykernel # connect vscode kernel
+matplotlib
+seaborn
+nltk
+Flask
+Flask-Cors
+mlflow==2.2.2
+setuptools
+pathlib
+dataclasses
+python-box==6.0.2
+pyYAML
+tqdm
+ensure==1.0.2
+joblib
+-e .

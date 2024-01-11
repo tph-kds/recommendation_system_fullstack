@@ -1,0 +1,22 @@
+artifacts_root: src/Content_Based_RS/boardgame_recommendation_system/artifacts
+
+data_ingestion:
+  root_dir: src/Content_Based_RS/boardgame_recommendation_system/artifacts/data_ingestion
+  local_data_file: src/Content_Based_RS/boardgame_recommendation_system/artifacts/data_ingestion/data.zip
+  unzip_dir: src/Content_Based_RS/boardgame_recommendation_system/artifacts/data_ingestion
+
+data_preparing:
+  root_dir: src/Content_Based_RS/boardgame_recommendation_system/artifacts/data_preparing
+  boardgame_data_file: src/Content_Based_RS/boardgame_recommendation_system/artifacts/data_ingestion/boardgame.csv
+  ratings_data_file: src/Content_Based_RS/boardgame_recommendation_system/artifacts/data_ingestion/ratings.csv
+
+data_processing:
+  root_dir: src/Content_Based_RS/boardgame_recommendation_system/artifacts/data_processing
+  knowledge_data_cb_preparing_file: src/Content_Based_RS/boardgame_recommendation_system/artifacts/data_preparing/knowledge_data_cb_preparing.csv
+  pickle_dir: src/Content_Based_RS/boardgame_recommendation_system/artifacts/pickle_folder
+
+model:
+  root_dir: src/Content_Based_RS/boardgame_recommendation_system/artifacts/model
+  knowledge_stems_cb: src/Content_Based_RS/boardgame_recommendation_system/artifacts/data_processing/knowledge_stems_data_cb_processing.csv
+  pickle_dir: src/Content_Based_RS/boardgame_recommendation_system/artifacts/pickle_folder
+

@@ -1,0 +1,22 @@
+artifacts_root: src/Hybrid_RS/boardgame_recommendation_system/artifacts
+
+data_ingestion:
+  root_dir: src/Hybrid_RS/boardgame_recommendation_system/artifacts/data_ingestion
+  local_data_file: src/Hybrid_RS/boardgame_recommendation_system/artifacts/data_ingestion/data.zip
+  unzip_dir: src/Hybrid_RS/boardgame_recommendation_system/artifacts/data_ingestion
+
+data_preparing:
+  root_dir: src/Hybrid_RS/boardgame_recommendation_system/artifacts/data_preparing
+  boardgame_data_file: src/Hybrid_RS/boardgame_recommendation_system/artifacts/data_ingestion/games_detailed_info.csv
+  ratings_data_file: src/Hybrid_RS/boardgame_recommendation_system/artifacts/data_ingestion/ratings.csv
+
+model:
+  root_dir: src/Hybrid_RS/boardgame_recommendation_system/artifacts/model
+  weight_ratings_hb_file: src/Hybrid_RS/boardgame_recommendation_system/artifacts/data_preparing/weight_ratings_hb_preparing.csv
+  pickle_dir: src/Hybrid_RS/boardgame_recommendation_system/artifacts/pickle_folder
+  bg_info : src/Hybrid_RS/boardgame_recommendation_system/artifacts/data_ingestion/games_detailed_info.csv
+  data_cb: src/Content_Based_RS/boardgame_recommendation_system/artifacts/pickle_folder/knowledge_stems_cb.pkl
+  similarity_cb: src/Content_Based_RS/boardgame_recommendation_system/artifacts/pickle_folder/similarity_cb.pkl
+  model_cfb: src/Collaborative_Filtering_Based_RS/boardgame_recommendation_system/artifacts/pickle_folder/model_cfb.pkl
+  bg_pivot_cfb: src/Collaborative_Filtering_Based_RS/boardgame_recommendation_system/artifacts/pickle_folder/bg_pivot_cfb_processing.pkl
+

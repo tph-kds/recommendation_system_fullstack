@@ -1,0 +1,28 @@
+artifacts_root: src/Collaborative_Filtering_Based_RS/boardgame_recommendation_system/artifacts
+
+data_ingestion:
+  root_dir: src/Collaborative_Filtering_Based_RS/boardgame_recommendation_system/artifacts/data_ingestion
+  local_data_file: src/Collaborative_Filtering_Based_RS/boardgame_recommendation_system/artifacts/data_ingestion/data.zip
+  unzip_dir: src/Collaborative_Filtering_Based_RS/boardgame_recommendation_system/artifacts/data_ingestion
+
+data_preparing:
+  root_dir: src/Collaborative_Filtering_Based_RS/boardgame_recommendation_system/artifacts/data_preparing
+  boardgame_data_file: src/Collaborative_Filtering_Based_RS/boardgame_recommendation_system/artifacts/data_ingestion/games_detailed_info.csv
+  ratings_data_file: src/Collaborative_Filtering_Based_RS/boardgame_recommendation_system/artifacts/data_ingestion/ratings.csv
+
+data_processing:
+  root_dir: src/Collaborative_Filtering_Based_RS/boardgame_recommendation_system/artifacts/data_processing
+  boardgame_data_file: src/Collaborative_Filtering_Based_RS/boardgame_recommendation_system/artifacts/data_preparing/bg_data_cfb_preparing.csv
+  ratings_data_file: src/Collaborative_Filtering_Based_RS/boardgame_recommendation_system/artifacts/data_preparing/ratings_data_cfb_preparing.csv
+  pickle_dir: src/Collaborative_Filtering_Based_RS/boardgame_recommendation_system/artifacts/pickle_folder
+
+model:
+  root_dir: src/Collaborative_Filtering_Based_RS/boardgame_recommendation_system/artifacts/model
+  ratings_data_file: src/Collaborative_Filtering_Based_RS/boardgame_recommendation_system/artifacts/data_processing/ratings_data_cfb_processing.csv
+  pickle_dir: src/Collaborative_Filtering_Based_RS/boardgame_recommendation_system/artifacts/pickle_folder
+
+evaluate_model:
+  root_dir: src/Collaborative_Filtering_Based_RS/boardgame_recommendation_system/artifacts/model
+  ratings_data_file: src/Collaborative_Filtering_Based_RS/boardgame_recommendation_system/artifacts/data_processing/ratings_data_cfb_processing.csv
+  pickle_dir: src/Collaborative_Filtering_Based_RS/boardgame_recommendation_system/artifacts/pickle_folder
+

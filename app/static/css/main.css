@@ -1,0 +1,434 @@
+.scroll-to-section :hover{
+    background-color: red;
+    /* padding-bottom: 70px; */
+    /* padding: 0 40px;
+    color: #000; */
+  
+  }
+.rankings_cards {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  border: 1px solid black;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: black;
+  /* justify-content: center; */
+
+}
+.rankings_cards .rankings_cards_items
+{
+    /* position: relative; */
+    width: 230px;
+    min-height: 300px;
+    position: relative;
+    margin: 12px;
+    display: inline-flex;
+    /* padding: 40px; */
+}
+
+.rankings_cards .rankings_cards_items .tags_item img{
+  width: 100%;
+  height: 200px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  z-index: -1;
+  /* opacity: 0.1; */
+  transition: transform linear .3s;
+  will-change: transform;
+  overflow: hidden;
+}
+.rankings_cards .rankings_cards_items .cards_items_div {
+    margin-bottom: 40px;
+  }
+.rankings_cards .rankings_cards_items .cards_items_div h4{
+  height: 50px;
+  /* width: 250px; */
+  font-size: 20px;
+  color: #ffff;
+  text-decoration: none;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap; /* Ngăn văn bản xuống dòng */
+  overflow: hidden; /* Ẩn văn bản bị tràn ra ngoài */
+  text-overflow: ellipsis;
+}
+.rankings_cards .rankings_cards_items .cards_items_div p{
+  margin-top: 12px;
+  height: 50px;
+  font-size: 16px;
+  color: #ffff;
+  text-decoration: none;
+  font-weight: 500;
+  text-align: center;
+
+}
+
+.col-fifth {
+  width: calc((100% - 48px) / 2);
+}
+.shop_cards {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    border: 1px solid black;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    background: black;
+    /* justify-content: center; */
+    overflow-x: auto;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    /* overflow: auto; */
+}
+
+.shop_cards .shop_card_item{
+  position: relative;
+  min-width: 250px;
+  height: 250px;
+  border: 1px 1px solid #ffff;
+  border-radius: 8px;
+  margin-right: 10px;
+  background: black;
+  transition: 0.3s linear ;
+  display: inline-flex;
+  overflow: hidden;
+
+}
+.shop_cards .shop_card_item::-webkit-scrollbar{
+  min-width: 350px;
+  display: none;
+}
+.shop_cards .shop_card_item .posters{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position: relative;
+}
+.shop_cards .shop_card_item .rest_cards{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* z-index: 999999; */
+  opacity: 1;
+  transition:  1s linear;
+}
+.shop_cards .shop_card_item:hover{
+  /* margin-top: 12px; */
+  min-width: 300px;
+  overflow: hidden;  
+}
+
+.shop_cards .shop_card_item .rest_cards img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position: relative;
+  z-index: -1;
+  opacity: 0.1;
+}
+
+
+.shop_cards .shop_card_item .rest_cards::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #b9f7ec);
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  bottom: 0;
+}
+.shop_cards .shop_card_item .rest_cards .cont{
+  /* display: none; */
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  left: 0;
+  color: #ffff;
+  padding: 0px 12px;
+}
+/* .shop_cards .shop_card_item .rest_cards:hover .shop_cards .shop_card_item .rest_cards .cont::after{
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #00fecf);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+} */
+
+
+.hidden-text {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  left: 0;
+  color: #ffff;
+  padding: 0px 12px;
+  transform: translateX(-50%, 50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.rest_cards:hover .hidden-text {
+  opacity: 1;
+}
+.shop_card_item:hover img{
+  filter: brightness(70%); 
+}
+
+
+
+.shop_cards .shop_card_item .rest_cards .cont .sub{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.shop_cards .shop_card_item .rest_cards .cont .sub p{
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffff;  
+}
+.shop_cards .shop_card_item .rest_cards .cont h4{
+  font-size: 25px;
+  font-weight: 700;
+  color: #ffff;  
+}
+
+
+.shop_cards .bi-chevron-left .bi-chevron-right {
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  width: 25px;
+  height: 25px;
+  background: rgb(255,255,255, .4) ;
+  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 12px;
+  cursor: pointer;
+  transition: .3s linear;
+  z-index: 99999;
+
+}
+
+.shop_cards .bi-chevron-right {
+left : unset;
+right: 3%;
+
+}
+
+.shop_cards .bi-chevron-left {
+  right : unset;
+  left: 3%;
+  
+  }
+
+.shop_cards:hover .bi-chevron-left, .shop_cards:hover .bi-chevron-right {
+  opacity: 1;
+  
+  }
+
+.btn-left:hover , .btn-right:hover {
+    cursor: pointer;
+}
+
+.place_item {
+  transition: transform linear .3s;
+  will-change: transform;
+  top: 0;
+}
+.place_item:hover { 
+  transform: translateY(-16px);
+  cursor: pointer;
+}
+
+.adjust_arrow {
+  margin-bottom:30px ;
+}
+
+.elementToToggle.is_active {
+  /* CSS của class active khi được thêm vào */
+  /* Ví dụ: */
+  display: block; /* hoặc các thuộc tính khác để hiển thị */
+}
+
+.elementToToggle {
+  /* CSS của phần tử khi không có class active */
+  /* Ví dụ: */
+  display: none; /* hoặc các thuộc tính khác để ẩn */
+}
+
+/*  SEARCH BAR */
+
+.search.active_search {
+  display: block;
+  position: relative;
+  width: 50%;
+  height: 60px;
+  border-radius: 60px;
+  /* background: black; */
+  transition: 0.5s linear;
+  background: white;
+  box-shadow: 0 0 0 2px #c5ff00;;
+  overflow: hidden;
+  left: 27%;
+  margin-top: 30px;
+}
+.search {
+  width: 0px;
+}
+
+/* .search .icon_search {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.search .icon_search::before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 3px solid black;
+  border-radius: 50%;
+  transform: translate(-4px, -4px);
+
+}
+.search .icon_search::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 12px;
+  background:  black;
+  transform: translate(6px, 6px) rotate(315deg);
+} */
+/* .search.active_search {
+  width: 360px;
+} */
+.search .input_search.input_search_active {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 60px;
+  left: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.search .input_search {
+  display: none;
+}
+
+.search .input_search input {
+  position: absolute;
+  top: 0;
+  width: 80%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  left: 0;
+  padding: 10px 20px;
+}
+.clear.clear_active {
+  /* display: block; */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  right: 15px;
+  /* background: green; */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.clear.clear_active::before{
+  /* display: block; */
+
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 15px;
+  background: #999 ;
+  transform: rotate(45deg);
+}
+
+.clear.clear_active::after{
+  /* display: block; */
+
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 15px;
+  background: #999 ;
+  transform: rotate(315deg);
+}
+.clear {
+  width: 0px;
+}
+.icon_search_name:hover{
+  background: linear-gradient(90deg, rgb(0 0 0) 0%, rgb(213 150 89) 1%, rgb(255 162 0) 100%);
+}
+
+.icon_search_name {
+  position: absolute;
+  top: 0;
+  left: 75%;
+  background: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.icon_search_name::before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 3px solid black;
+  border-radius: 50%;
+  transform: translate(-4px, -4px);
+
+}
+.icon_search_name::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 12px;
+  background:  black;
+  transform: translate(6px, 6px) rotate(315deg);
+}
