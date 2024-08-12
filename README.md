@@ -1,6 +1,8 @@
 <h1 align="center">RECOMMENDATION SYSTEM FULLSTACK PROJECT</h1>
-
-<img src="https://raw.githubusercontent.com/tph-kds/image_storages/main/images/svgs/recommendation_system/logo_bg.png" width="800">
+<p align="center">
+  <img align="center" src="https://github.com/tph-kds/image_storages/blob/d88caf2b45c0ef2eeee160608205344706c5f938/images/svgs/recommendation_system/logo_bg.png" width="800">
+  
+</p>
 
 ## I. Introduce
 
