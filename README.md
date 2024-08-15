@@ -120,18 +120,18 @@ We provide a [benchmark notebook](examples/06_benchmarks/movielens.ipynb) to ill
 
 ## IV. References
 
-- **FREE COURSE**: M. González-Fierro, "Recommendation Systems: A Practical Introduction", LinkedIn Learning, 2024. [Available on this link](https://www.linkedin.com/learning/recommendation-systems-a-practical-introduction).
-- D. Li, J. Lian, L. Zhang, K. Ren, D. Lu, T. Wu, X. Xie, "Recommender Systems: Frontiers and Practices", Springer, Beijing, 2024. [Available on this link](https://www.amazon.com/Recommender-Systems-Frontiers-Practices-Dongsheng/dp/9819989639/).
+- **FREE COURSE** : M. González-Fierro, "Recommendation Systems: A Practical Introduction", LinkedIn Learning, 2024. [Available on this link](https://www.linkedin.com/learning/recommendation-systems-a-practical-introduction).
+- **PAPER** : D. Li, J. Lian, L. Zhang, K. Ren, D. Lu, T. Wu, X. Xie, "Recommender Systems: Frontiers and Practices", Springer, Beijing, 2024. [Available on this link](https://www.amazon.com/Recommender-Systems-Frontiers-Practices-Dongsheng/dp/9819989639/).
 
-- KAGGLE Jesse Van Elteren. Boardgamegeek reviews.
-https://www.kaggle.com/datasets/jvanelteren/boardgamegeek-reviews/
+- **KAGGLE** : Jesse Van Elteren. Boardgamegeek reviews.
+[Available on this link](https://www.kaggle.com/datasets/jvanelteren/boardgamegeek-reviews/)
 , 2022. [Online; accessed January 8, 2024].
 
-- GEEK. Boardgamegeek. https://boardgamegeek.com/. [Online; accessed January 8, 2024].
+- **GEEK** : Boardgamegeek. [Available on this link](https://boardgamegeek.com/). [Online; accessed January 8, 2024].
 
-- GITHUB. Boardgame recommendation system. https://github.com/tph-kds/recommendation_system_fullstack.git/
+- **GITHUB** : Boardgame recommendation system. [Available on this link](https://github.com/tph-kds/recommendation_system_fullstack.git/)
 . [Online; accessed January 8, 2024].
 
-- NVIDIA. Recommendation system.
-https://www.nvidia.com/en-us/glossary/data-science/recommendation-system/
+- **NVIDIA** : Recommendation system.
+[Available on this link](https://www.nvidia.com/en-us/glossary/data-science/recommendation-system/)
 . [Online; accessed January 8, 2024].
