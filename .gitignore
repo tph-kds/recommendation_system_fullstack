@@ -174,3 +174,7 @@ app/artifacts/*
 appfulll/*
 logs/*
 Datasets/*
+Test/Collaborative_Filtering/artifacts/*
+Test/Content_Based/artifacts/*
+Test/Content_Based/boardgame_name.csv
+Test/Collaborative_Filtering/actual_user_games.json

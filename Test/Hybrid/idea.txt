@@ -1,0 +1,5 @@
+Calculate weighted, similarity of the content based method, distance of the collaborative_filtering based method, 
+See the similar of them,
+==> Create Score value ==> the final recommendation.
+==> Visualize
+==> deploy app - ...
