@@ -5,16 +5,16 @@
 </p>
 
 # Contents
-* [Introduce](#i.-introduce)
-    * [The goals of project](#The-goals-of-project)
-    * [Data Sources](#data-sources)
-    * [Steps of project](#steps-of-project)
-    * [Deployment](#deployment)
-    * [Data Lineage](#data-lineage)
-* [Getting Started](#getting-started)
-* [Algorithms](#algorithms)
+* [Introduce](#i-introduce)
+    * [The goals of project](#1-the-goals-of-project)
+    * [Data Sources](#2-data-sources)
+    * [Steps of project](#3-steps-of-project)
+    * [Deployment](#4-deployment-for-this-project)
+    * [Data Lineage](#5-data-lineage-projects-workflow)
+* [Getting Started](#ii-getting-started)
+* [Algorithms](#iii-algorithms)
     * [Algorithm Comparison](#algorithm-comparison)
-* [References](#references)
+* [References](#iv-references)
 
 
 ## I. Introduce
