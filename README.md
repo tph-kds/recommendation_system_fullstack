@@ -108,7 +108,7 @@ The table below lists the recommendation algorithms currently available in the r
 
 ### Algorithm Comparison
 
-I provide a benchmark notebook to illustrate how different algorithms could be evaluated and compared. In this notebook, the project's dataset is split into training/test sets at a 75/25 ratio using a stratified split. A recommendation model is trained using each of the collaborative filtering algorithms below. We utilize empirical parameter values reported in literature [here](http://mymedialite.net/examples/datasets.html). For ranking metrics we use `k=10` (top 10 recommended items). In this table we show the results on 20,588 boardgame name, running the algorithms for 10 epochs.
+I provide a benchmark notebook to illustrate how different algorithms could be evaluated and compared. In this notebook, the project's dataset is split into training/test sets at a 75/25 ratio using a stratified split. A recommendation model is trained using each of the collaborative filtering algorithms below. For ranking metrics we use `k=10` (top 10 recommended items). In this table we show the results on 20,588 boardgame name, running the algorithms for 10 epochs.
 
 | Algo | MAP | Precision@k | Recall@k |
 | --- | --- | --- |  --- |
