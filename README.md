@@ -123,13 +123,13 @@ We provide a [benchmark notebook](examples/06_benchmarks/movielens.ipynb) to ill
 - **FREE COURSE** : M. González-Fierro, "Recommendation Systems: A Practical Introduction", LinkedIn Learning, 2024. [Available on this link](https://www.linkedin.com/learning/recommendation-systems-a-practical-introduction).
 - **PAPER** : D. Li, J. Lian, L. Zhang, K. Ren, D. Lu, T. Wu, X. Xie, "Recommender Systems: Frontiers and Practices", Springer, Beijing, 2024. [Available on this link](https://www.amazon.com/Recommender-Systems-Frontiers-Practices-Dongsheng/dp/9819989639/).
 
-- **KAGGLE** : Jesse Van Elteren. Boardgamegeek reviews.
+- **KAGGLE** : Jesse Van Elteren. Boardgamegeek reviews , 2022.
 [Available on this link](https://www.kaggle.com/datasets/jvanelteren/boardgamegeek-reviews/)
-, 2022. [Online; accessed January 8, 2024].
+[Online; accessed January 8, 2024].
 
 - **GEEK** : Boardgamegeek. [Available on this link](https://boardgamegeek.com/). [Online; accessed January 8, 2024].
 
-- **GITHUB** : Boardgame recommendation system. [Available on this link](https://github.com/tph-kds/recommendation_system_fullstack.git/)
+- **GITHUB** : Boardgame recommendation system, 2023-2024. [Available on this link](https://github.com/tph-kds/recommendation_system_fullstack.git/)
 . [Online; accessed January 8, 2024].
 
 - **NVIDIA** : Recommendation system.
