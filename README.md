@@ -39,11 +39,11 @@ Boardgame recommendation systems is to assist researchers, developers and enthus
 
 This repository contains examples and best practices for building recommendation systems, provided as Jupyter notebooks, between some folders and used methods. The examples detail our learnings on five key tasks:
 
-- [Prepare Data](docs/01_prepare_data): Preparing and loading data for each recommendation algorithm.
-- [Model](docs/00_quick_start): Building models using various classical and recommendation algorithms such as Collaborative Filtering Based ([CFB](https://medium.com/@evelyn.eve.9512/collaborative-filtering-in-recommender-system-an-overview-38dfa8462b61)) and Content Based ([CB](https://developers.google.com/machine-learning/recommendation/content-based/basics)) Hybrid RS ([HRS](https://www.kaggle.com/code/iambideniz/hybrid-recommender-system)) and Merge Average Based RS ([MAB](https://www.kaggle.com/code/iambideniz/hybrid-recommender-system)).
-- [Evaluate](docs/03_evaluate): Evaluating algorithms with offline metrics.
-- [Model Select and Optimize](docs/04_model_select_and_optimize): Fine tuning and optimizing hyperparameters for recommendation models.
-- [Deployment](docs/05_Deployment): Deployment models in a production environment on Website by using ([Flask Framework](https://flask.palletsprojects.com/en/3.0.x/)).
+- [Prepare Data](Test): Preparing and loading data for each recommendation algorithm.
+- [Model](Test): Building models using various classical and recommendation algorithms such as Collaborative Filtering Based ([CFB](https://medium.com/@evelyn.eve.9512/collaborative-filtering-in-recommender-system-an-overview-38dfa8462b61)) and Content Based ([CB](https://developers.google.com/machine-learning/recommendation/content-based/basics)) Hybrid RS ([HRS](https://www.kaggle.com/code/iambideniz/hybrid-recommender-system)) and Merge Average Based RS ([MAB](https://www.kaggle.com/code/iambideniz/hybrid-recommender-system)).
+- [Evaluate](test): Evaluating algorithms with offline metrics.
+- [Model Select and Optimize](test): Fine tuning and optimizing hyperparameters for recommendation models.
+- [Deployment](app): Deployment models in a production environment on Website by using ([Flask Framework](https://flask.palletsprojects.com/en/3.0.x/)).
 
 Several utilities are provided in [src](src) to support common tasks such as complete seperate stages and algorithmns and combine them to receive a accuracy and confident result throughout [src/Hydrid RS](src/Hybrid_RS/) . See the detailly processing stream and workflow of all project, you can run at [main.py](src/main.py).
 
@@ -55,7 +55,7 @@ For a more detailed overview of the repository, please see the documents on the 
   <img src="https://github.com/tph-kds/image_storages/blob/1bd43f03c9d581bb8660a8709fd95521733fcddf/images/svgs/recommendation_system/deployment.png" width="800">
 </p>
 
-For some of the practical deployment where recommendation systems have been applied, see [deployment](deployment).  
+For some of the practical deployment where recommendation systems have been applied, see [deployment]().  
 
 
 ### 5. Data Lineage ([Project's Workflow](workflow.png))
@@ -90,7 +90,7 @@ git clone https://github.com/tph-kds/recommendation_system_fullstack
 #   c. Run the notebook.
 ```
 
-For more information about setup on other platforms (e.g., Windows and macOS) and different configurations, see the [Setup Guide](SETUP.md).
+For more information about setup on other platforms (e.g., Windows and macOS) and different configurations, see the [Setup Guide](https://gist.github.com/alexwolson/9cfbb9e5312808cce9d730eb577e18f3).
 
 
 ## III. Algorithms
@@ -99,16 +99,16 @@ The table below lists the recommendation algorithms currently available in the r
 
 | Algorithm | Type | Description | Example |
 |-----------|------|-------------|---------|
-| Similarity Based Recommendation Systems (SBRS) | Collaborative Filtering | It relies on the similarity value between items to make recommendations. The system calculates how similar items are to each other based on user interactions, such as ratings, views, or purchases. When a user interacts with an item, the system recommends other items that are similar based on these calculated similarities. This approach is particularly useful for generating recommendations when there is a large number of users and the focus is on the relationships between items rather than users." This description focuses on the key aspects of similarity-based item-item recommendation systems, without conflating it with other techniques like matrix factorization. It works in the CPU/GPU environment.| [Quick start](examples/00_quick_start/als_movielens.ipynb) / [Deep dive](examples/02_model_collaborative_filtering/als_deep_dive.ipynb) |
-| Similarity Based Recommendation Systems (SBRS) | Content Based Filtering | Content-based filtering is another popular recommendation technique that, like item-item collaborative filtering, relies on similarity. However, instead of using the similarity between items based on user interactions, content-based filtering uses the attributes or features of the items themselves. It works in the CPU/GPU environment. | [Quick start](examples/00_quick_start/sequential_recsys_amazondataset.ipynb) |
-| Weight-rating<sup>*</sup> | Hydrid Based | Weight-rating methods are used to aim to enhance the accuracy of the recommendations by assigning different weights to items or features based on their importance or relevance. It works in the CPU/GPU environment. | [Quick start](examples/00_quick_start/sequential_recsys_amazondataset.ipynb) |
-| Mergetive Result Average<sup>*</sup> | Merge Average Based |  Mergetive Result Average algorithm that aims to capture and merge all of method results throughout averaging between the weights represents the mutual importance of the results - 3 methods which are used above. These weights can be adjusted during fine tuning processing. It works in the CPU/GPU environment. | [Quick start](examples/00_quick_start/sequential_recsys_amazondataset.ipynb) |
+| Similarity Based Recommendation Systems (SBRS) | Collaborative Filtering | It relies on the similarity value between items to make recommendations. The system calculates how similar items are to each other based on user interactions, such as ratings, views, or purchases. When a user interacts with an item, the system recommends other items that are similar based on these calculated similarities. This approach is particularly useful for generating recommendations when there is a large number of users and the focus is on the relationships between items rather than users." This description focuses on the key aspects of similarity-based item-item recommendation systems, without conflating it with other techniques like matrix factorization. It works in the CPU/GPU environment.| [Quick start](Test/Collaborative_Filtering) |
+| Similarity Based Recommendation Systems (SBRS) | Content Based Filtering | Content-based filtering is another popular recommendation technique that, like item-item collaborative filtering, relies on similarity. However, instead of using the similarity between items based on user interactions, content-based filtering uses the attributes or features of the items themselves. It works in the CPU/GPU environment. | [Quick start](Test/Content_Based) |
+| Weight-rating<sup>*</sup> | Hydrid Based | Weight-rating methods are used to aim to enhance the accuracy of the recommendations by assigning different weights to items or features based on their importance or relevance. It works in the CPU/GPU environment. | [Quick start](Test/Hybrid) |
+| Mergetive Result Average<sup>*</sup> | Merge Average Based |  Mergetive Result Average algorithm that aims to capture and merge all of method results throughout averaging between the weights represents the mutual importance of the results - 3 methods which are used above. These weights can be adjusted during fine tuning processing. It works in the CPU/GPU environment. | [Quick start](Test/Hybrid) |
 
 
 
 ### Algorithm Comparison
 
-We provide a [benchmark notebook](examples/06_benchmarks/movielens.ipynb) to illustrate how different algorithms could be evaluated and compared. In this notebook, the project's dataset is split into training/test sets at a 75/25 ratio using a stratified split. A recommendation model is trained using each of the collaborative filtering algorithms below. We utilize empirical parameter values reported in literature [here](http://mymedialite.net/examples/datasets.html). For ranking metrics we use `k=10` (top 10 recommended items). In this table we show the results on 20,588 boardgame name, running the algorithms for 10 epochs.
+I provide a benchmark notebook to illustrate how different algorithms could be evaluated and compared. In this notebook, the project's dataset is split into training/test sets at a 75/25 ratio using a stratified split. A recommendation model is trained using each of the collaborative filtering algorithms below. We utilize empirical parameter values reported in literature [here](http://mymedialite.net/examples/datasets.html). For ranking metrics we use `k=10` (top 10 recommended items). In this table we show the results on 20,588 boardgame name, running the algorithms for 10 epochs.
 
 | Algo | MAP | Precision@k | Recall@k |
 | --- | --- | --- |  --- |
