@@ -4,6 +4,19 @@
   
 </p>
 
+## Contents
+* [Introduce](#introduce)
+    * [The Goals](#the-goals)
+    * [Data Sources](#data-sources)
+    * [Steps of project](#steps-of-project)
+    * [Deployment](#deployment)
+    * [Data Lineage](#data-lineage)
+* [Getting Started](#getting-started)
+* [Algorithms](#algorithms)
+    * [Algorithm Comparison](#algorithm-comparison)
+* [References](#references)
+
+
 ## I. Introduce
 
 ### 1. The goals of project
@@ -45,7 +58,7 @@ For a more detailed overview of the repository, please see the documents on the 
 For some of the practical deployment where recommendation systems have been applied, see [deployment](deployment).  
 
 
-### 4. Data Lineage ([Project's Workflow](workflow.png))
+### 5. Data Lineage ([Project's Workflow](workflow.png))
 <p align="center">
   <img src="https://github.com/tph-kds/image_storages/blob/d8747de52fee64e0091f1152f928688ef9d90bda/images/svgs/recommendation_system/data_lineage.png" width="800">
 </p>
