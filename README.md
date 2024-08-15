@@ -112,10 +112,10 @@ I provide a benchmark notebook to illustrate how different algorithms could be e
 
 | Algo | MAP | Precision@k | Recall@k |
 | --- | --- | --- |  --- |
-| [CFB](examples/00_quick_start/als_movielens.ipynb) | 0.003428 |	0.012902 | 0.010606 |
-| [CB](examples/02_model_collaborative_filtering/cornac_bivae_deep_dive.ipynb) | N/A	|  0.069507 |	0.000491 |
-| [HRS](examples/02_model_collaborative_filtering/cornac_bpr_deep_dive.ipynb) | N/A	| N/A | N/A |
-| [MAB](examples/02_model_collaborative_filtering/cornac_bpr_deep_dive.ipynb) | 0.100258	|  0.125029 |	0.104856 |
+| [CFB](src/Collaborative_Filtering_Based_RS) | 0.003428 |	0.012902 | 0.010606 |
+| [CB](src/Content_Based_RS) | N/A	|  0.069507 |	0.000491 |
+| [HRS](src/Hybrid_RS/) | N/A	| N/A | N/A |
+| [MAB](src/Recommendation) | 0.100258	|  0.125029 |	0.104856 |
 
 
 ## IV. References
