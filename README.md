@@ -6,7 +6,7 @@
 
 # Contents
 * [Introduce](#introduce)
-    * [The Goals](#the-goals)
+    * [The goals of project](#The-goals-of-project)
     * [Data Sources](#data-sources)
     * [Steps of project](#steps-of-project)
     * [Deployment](#deployment)
