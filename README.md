@@ -1,6 +1,6 @@
 <h1 align="center">RECOMMENDATION SYSTEM FULLSTACK PROJECT</h1>
 <p align="center">
-  <img align="center" src="https://github.com/tph-kds/image_storages/blob/d88caf2b45c0ef2eeee160608205344706c5f938/images/svgs/recommendation_system/logo_bg.png" width="800">
+  <img align="center" src="readme/images/logo_bg.png" width="800">
   
 </p>
 
@@ -52,7 +52,7 @@ For a more detailed overview of the repository, please see the documents on the 
 
 ### 4. Deployment for this project
 <p align="center">
-  <img src="https://github.com/tph-kds/image_storages/blob/1bd43f03c9d581bb8660a8709fd95521733fcddf/images/svgs/recommendation_system/deployment.png" width="800">
+  <img src="readme/images/deployment.png" width="800">
 </p>
 
 For some of the practical deployment where recommendation systems have been applied, see [deployment]().  
@@ -60,7 +60,7 @@ For some of the practical deployment where recommendation systems have been appl
 
 ### 5. Data Lineage ([Project's Workflow](workflow.png))
 <p align="center">
-  <img src="https://github.com/tph-kds/image_storages/blob/d8747de52fee64e0091f1152f928688ef9d90bda/images/svgs/recommendation_system/data_lineage.png" width="800">
+  <img src="readme/images/data_lineage.png" width="800">
 </p>
 
 ## II. Getting Started
